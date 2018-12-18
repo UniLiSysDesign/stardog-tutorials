@@ -1,4 +1,4 @@
-SELECT ?year (count(?album) AS ?count) 
+SELECT ?year (count(distinct ?album) AS ?count) 
 {
     ?album a :Album ;
             :date ?date ;
